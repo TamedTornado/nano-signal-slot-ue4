@@ -1,13 +1,13 @@
 using System.IO;
 using UnrealBuildTool;
 
-public class nano-signal-slot : ModuleRules
+public class NanoSignalSlot : ModuleRules
 {
-	public nano-signal-slot(TargetInfo Target)
+    public NanoSignalSlot(TargetInfo Target)
 	{
 		Type = ModuleType.External;
 
-		string TTFSMBaseDir = Path.Combine(UEBuildConfiguration.UEThirdPartySourceDirectory, "nano-signal-slot-module");
+		string TTFSMBaseDir = Path.Combine(UEBuildConfiguration.UEThirdPartySourceDirectory, "nano-signal-slot");
 		string TTFSMDir = Path.Combine(TTFSMBaseDir, "nano-signal-slot-module");
 		
 		PublicIncludePaths.Add(TTFSMDir);
